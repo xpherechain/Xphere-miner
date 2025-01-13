@@ -28,6 +28,7 @@ Stay up-to-date with the latest updates and improvements:
    To run the miner program, you need to set the targetMiner. Follow these steps
    - Visit https://zigap.io and create a wallet.
    - Once the wallet is created, copy the generated address and set it as the targetMiner in the configuration.
+   - After creating the wallet, select the `XPHERE TESTNET 2.0 network`, then copy the generated wallet address and use it in your setup.
 
 #### MacOS
 
