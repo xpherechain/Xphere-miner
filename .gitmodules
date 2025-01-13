@@ -1,0 +1,3 @@
+[submodule "miner"]
+	path = miner
+	url = https://github.com/xpherechain/miner.git
