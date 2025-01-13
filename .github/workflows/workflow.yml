@@ -1,0 +1,126 @@
+name: GitHub Action Tag Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup-build-deploy:
+    runs-on: ubuntu-latest
+    if: contains(github.event.head_commit.message, '[release]')
+    permissions:
+      contents: write
+      id-token: write
+
+    steps:
+      - name: Checkout the repository (with submodules)
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.REPO }}
+          submodules: true
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Restore .gitmodules File
+        run: |
+          echo '[submodule "miner"]' > .gitmodules
+          echo '    path = miner' >> .gitmodules
+          echo '    url = https://github.com/xpherechain/miner.git' >> .gitmodules
+          git submodule update --init --recursive
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: "1.x"
+
+      - name: Build for all platforms
+        run: |
+          cd miner/src
+          make dist
+
+      - name: Verify build outputs
+        run: |
+          ls -lh miner/src/dist
+
+      - name: Read release notes
+        id: release_notes
+        run: |
+          if [ -f RELEASE_NOTES.md ]; then
+            echo "RELEASE_BODY<<EOF" >> $GITHUB_ENV
+            cat RELEASE_NOTES.md >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+          else
+            echo "RELEASE_BODY<<EOF" >> $GITHUB_ENV
+            echo "No release notes provided." >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+          fi
+      - name: Bump version and push tag
+        id: tag_version
+        uses: mathieudutour/github-tag-action@v6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tag_prefix: "v"
+          release_branches: main
+
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.tag_version.outputs.new_tag }}
+          release_name: "Release ${{ steps.tag_version.outputs.new_tag }}"
+          body: ${{ env.RELEASE_BODY }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Windows Binary
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./miner/src/dist/miner-windows-amd64.exe
+          asset_name: miner-windows-amd64.exe
+          asset_content_type: application/octet-stream
+
+      - name: Upload Darwin Binary
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./miner/src/dist/miner-darwin-amd64
+          asset_name: miner-darwin-amd64
+          asset_content_type: application/octet-stream
+
+      - name: Upload Linux Binary
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./miner/src/dist/miner-linux-amd64
+          asset_name: miner-linux-amd64
+          asset_content_type: application/octet-stream
+
+      - name: Upload config.json
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./miner/src/dist/config.json
+          asset_name: config.json
+          asset_content_type: application/json
+
+      - name: Update README with latest release
+        run: |
+          sed -i "s#Release v[0-9.]*#Release ${{ steps.tag_version.outputs.new_tag }}#g" README.md
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git config --global status.submodulesummary false
+          git config --global diff.ignoreSubmodules all
+          git add README.md
+          git commit -m "Update README with Release ${{ steps.tag_version.outputs.new_tag }}"
+          git push
