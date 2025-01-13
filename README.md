@@ -48,6 +48,12 @@ Stay up-to-date with the latest updates and improvements:
    Note: If you encounter a warning about an unidentified developer, go to System Preferences → Security & Privacy → General, and allow the miner program.
    ```
 
+##### Example
+
+```
+C:\Users\USER\Downloads>miner-window-amd64 -config ./config.json -targetminer 0x43ee5CDDF65F4cafA4b834e3c93108532Fe8768
+```
+
 #### Windows
 
 1. Open Command Prompt with administrator privileges.
@@ -60,6 +66,12 @@ miner-window-amd64 -config ./config.json -targetMiner your wallet addr
 
 **Make sure to use the appropriate command for your operating system and the location of the downloaded files.
 For example, run the following command**
+
+##### Example
+
+```
+C:\Users\USER\Downloads>miner-window-amd64 -config ./config.json -targetminer 0x43ee5CDDF65F4cafA4b834e3c93108532Fe8768
+```
 
 ---
 
