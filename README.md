@@ -75,7 +75,7 @@ For example, run the following command**
 
 If you need help using the program or want to report a bug, please contact us by email or visit our official website
 
-- <a href="https://x-phere.com" target="_blank">XPHERE Homepage</a>
-- <a href="https://about.zigap.io" target="_blank">Wallet Website</a>
+- <a href="https://x-phere.com" target="_blank">XPHERE Network Homepage</a>
+- <a href="https://about.zigap.io" target="_blank">ZIGAP Wallet Homepage</a>
 
 ---
