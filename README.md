@@ -33,7 +33,13 @@ Stay up-to-date with the latest updates and improvements:
 
 1. Open the Terminal.
 2. Navigate to the directory where you placed the MacOS miner binary, and also place the `config.json` file in the same directory.
-3. Run the following command:
+3. The file to which you are granting execute permissions.
+
+   ```bash
+   chmod +x miner-darwin-amd64
+   ```
+
+4. Run the following command:
 
    ```bash
    ./miner-darwin-amd64 -config ./config.json -targetMiner [your wallet address]
