@@ -51,7 +51,7 @@ Stay up-to-date with the latest updates and improvements:
 ##### Example
 
 ```
-C:\Users\USER\Downloads>miner-window-amd64 -config ./config.json -targetminer 0x43ee5CDDF65F4cafA4b834e3c93108532Fe8768
+~/Downloads % ./miner-darwin-amd64 -config ./config.json -targetMiner "0x25752A3bD667E5a86cF297E74027503d48054442"
 ```
 
 #### Windows
