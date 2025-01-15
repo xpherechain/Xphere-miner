@@ -59,7 +59,7 @@ Stay up-to-date with the latest updates and improvements:
 3. Run the following command:
 
 ```
-miner-window-amd64 -config ./config.json -targetMiner your wallet addr
+miner-windows-amd64 -config ./config.json -targetMiner your wallet addr
 ```
 
 **Make sure to use the appropriate command for your operating system and the location of the downloaded files.
@@ -67,7 +67,7 @@ For example, run the following command**
 
 ##### Example
 
-<code>C:\Users\USER\Downloads>miner-window-amd64 -config ./config.json -targetminer 0x43ee5CDDF65F4cafA4b834e3c93108532Fe8768</code>
+<code>C:\Users\USER\Downloads>miner-windows-amd64 -config ./config.json -targetminer 0x43ee5CDDF65F4cafA4b834e3c93108532Fe8768</code>
 
 ---
 
