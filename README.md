@@ -43,7 +43,7 @@ Stay up-to-date with the latest updates and improvements:
 4. Run the following command:
 
    ```bash
-   ./miner-darwin-amd64 -config ./config.json -targetMiner your wallet address
+   ./miner-darwin-amd64 -config ./config.json -targetMiner [your wallet address]
 
    Note: If you encounter a warning about an unidentified developer, go to System Preferences → Security & Privacy → General, and allow the miner program.
    ```
@@ -59,7 +59,7 @@ Stay up-to-date with the latest updates and improvements:
 3. Run the following command:
 
 ```
-miner-windows-amd64 -config ./config.json -targetMiner your wallet addr
+miner-windows-amd64 -config ./config.json -targetMiner [your wallet address]
 ```
 
 **Make sure to use the appropriate command for your operating system and the location of the downloaded files.
