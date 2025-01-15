@@ -55,7 +55,7 @@ Stay up-to-date with the latest updates and improvements:
 
 ##### Example
 
-#### ~/Downloads % ./miner-darwin-amd64 -config ./config.json -targetMiner <code>**_0x43ee5CD....8532Fe8768_**</code>
+#### ~/Downloads % ./miner-darwin-amd64 -config ./config.json -targetMiner <code>**_0x43e...e8768_**</code>
 
 #### Windows
 
@@ -76,7 +76,7 @@ For example, run the following command_**
 
 ##### Example
 
-#### C:\Users\USER\Downloads>miner-windows-amd64 -config ./config.json -targetminer <code>**_0x43ee5CD....8532Fe8768_** </code>
+#### C:\Users\USER\Downloads>miner-windows-amd64 -config ./config.json -targetminer <code>**_0x43e...e8768_**</code>
 
 ---
 
