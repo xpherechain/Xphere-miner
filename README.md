@@ -42,21 +42,25 @@ Stay up-to-date with the latest updates and improvements:
 
 4. Run the following command:
 
-   ```bash
-   ./miner-darwin-amd64 -config ./config.json -targetMiner [your wallet address]
+- **_Note: If you encounter a warning about an unidentified developer, go to System Preferences → Security & Privacy → General, and allow the miner program._**
 
-   Note: If you encounter a warning about an unidentified developer, go to System Preferences → Security & Privacy → General, and allow the miner program.
-   ```
+  ```bash
+  ./miner-darwin-amd64 -config ./config.json -targetMiner [your wallet address]
+  ```
 
 ##### Example
 
-<code>~/Downloads % ./miner-darwin-amd64 -config ./config.json -targetMiner "0x25752A3bD667E5a86cF297E74027503d48054442"</code>
+<code>~/Downloads % ./miner-darwin-amd64 -config ./config.json -targetMiner <u>0x25752A3bD667E5a86cF297E74027503d48054442</u></code>
 
 #### Windows
 
-1. Open Command Prompt with administrator privileges.
+1. **_Open Command Prompt with administrator privileges._**
 2. Navigate to the directory where you placed the Windows miner binary, and also place the config.json file in the same directory.
 3. Run the following command:
+
+```
+cd %USERPROFILE%\Downloads
+```
 
 ```
 miner-windows-amd64 -config ./config.json -targetMiner [your wallet address]
@@ -67,7 +71,7 @@ For example, run the following command**
 
 ##### Example
 
-<code>C:\Users\USER\Downloads>miner-windows-amd64 -config ./config.json -targetminer 0x43ee5CDDF65F4cafA4b834e3c93108532Fe8768</code>
+<code>C:\Users\USER\Downloads>miner-windows-amd64 -config ./config.json -targetminer <u>0x43ee5CDDF65F4cafA4b834e3c93108532Fe8768</u></code>
 
 ---
 
