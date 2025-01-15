@@ -34,6 +34,11 @@ Stay up-to-date with the latest updates and improvements:
 
 1. Open the Terminal.
 2. Navigate to the directory where you placed the MacOS miner binary, and also place the `config.json` file in the same directory.
+
+   ```bash
+   cd ~/Downloads
+   ```
+
 3. The file to which you are granting execute permissions.
 
    ```bash
@@ -50,7 +55,7 @@ Stay up-to-date with the latest updates and improvements:
 
 ##### Example
 
-<code>~/Downloads % ./miner-darwin-amd64 -config ./config.json -targetMiner <u>0x25752A3bD667E5a86cF297E74027503d48054442</u></code>
+#### ~/Downloads % ./miner-darwin-amd64 -config ./config.json -targetMiner <code>**_0x25752A3bD667E5a86cF297E74027503d48054442_**</code>
 
 #### Windows
 
@@ -66,12 +71,12 @@ cd %USERPROFILE%\Downloads
 miner-windows-amd64 -config ./config.json -targetMiner [your wallet address]
 ```
 
-**Make sure to use the appropriate command for your operating system and the location of the downloaded files.
-For example, run the following command**
+**_Make sure to use the appropriate command for your operating system and the location of the downloaded files.
+For example, run the following command_**
 
 ##### Example
 
-<code>C:\Users\USER\Downloads>miner-windows-amd64 -config ./config.json -targetminer <u>0x43ee5CDDF65F4cafA4b834e3c93108532Fe8768</u></code>
+#### C:\Users\USER\Downloads>miner-windows-amd64 -config ./config.json -targetminer <code>**_0x43ee5CDDF65F4cafA4b834e3c93108532Fe8768_** </code>
 
 ---
 
