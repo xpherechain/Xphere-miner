@@ -1,7 +1,9 @@
-# XPHERE Miner
+# XPHERE Miner(Testnet)
 
 **XPHERE Miner** is a high-performance, multi-threaded mining program designed for the XPHERE network.  
 It enables users to mine blocks efficiently and earn rewards. The program is compatible with multiple platforms, including **Windows**, **macOS**, and **Linux**.
+
+**_Looking to get started quickly? 🚀 With our [Faucet Service](https://faucet.x-phere.com/), you can claim free XPHERE coins to set up your wallet and dive into mining in no time. It’s the perfect way to jumpstart your journey in the XPHERE ecosystem and begin earning rewards efficiently._**
 
 ## Key Features
 
