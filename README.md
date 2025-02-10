@@ -37,9 +37,11 @@ Stay up-to-date with the latest updates and improvements:
 1. Open the Terminal.
 2. Navigate to the directory where you placed the MacOS miner binary, and also place the `config.json` file in the same directory.
 
-   ```bash
-   cd ~/Downloads
-   ```
+- By default, downloaded files are stored in the `Downloads` folder.
+
+  ```
+  cd ~/Downloads
+  ```
 
 3. The file to which you are granting execute permissions.
 
@@ -58,6 +60,44 @@ Stay up-to-date with the latest updates and improvements:
 ##### Example
 
 #### ~/Downloads % ./miner-darwin-amd64 -config ./config.json -targetMiner <code>**_0x43e...e8768_**</code>
+
+#### Linux
+
+1. Open the Terminal.
+2. Navigate to the directory containing the miner binary and config file
+
+- By default, downloaded files are stored in the `Downloads` folder.
+  ```
+  cd ~/Downloads
+  ```
+
+3. Replace <server_ip> with your actual server IP, and make sure to use the correct username and file path.
+
+   ```
+   scp miner-linux-amd64 config.json root@<server_ip>:/root/
+   ```
+
+4. Once the transfer is complete, connect to the server and verify that both miner-linux-amd64 and config.json exist in the specified directory.
+
+   ```
+   ls -al
+   ```
+
+5. Grant execute permissions
+
+   ```
+   chmod +x miner-linux-amd64
+   ```
+
+6. Run the miner program
+
+   ```
+   ./miner-linux-amd64 -config ./config.json -targetMiner [your wallet address]
+   ```
+
+##### Example Command Execution
+
+#### root@USER:~# ./miner-linux-amd64 -config ./config.json -targetMiner <code>**_0x43e...e8768_**</code>
 
 #### Windows
 
