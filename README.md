@@ -1,9 +1,9 @@
-# XPHERE Miner(Testnet)
+# XPHERE Miner
 
 **XPHERE Miner** is a high-performance, multi-threaded mining program designed for the XPHERE network.  
 It enables users to mine blocks efficiently and earn rewards. The program is compatible with multiple platforms, including **Windows**, **macOS**, and **Linux**.
 
-**_Looking to get started quickly? 🚀 With our [Faucet Service](https://faucet.x-phere.com/), you can claim free XPHERE coins to set up your wallet and dive into mining in no time. It’s the perfect way to jumpstart your journey in the XPHERE ecosystem and begin earning rewards efficiently._**
+**_Looking to get started quickly? 🚀 With our [Faucet Service](https://faucet.x-phere.com/), you can claim free XPHERE TestNet coins to set up your wallet and dive into mining in no time. It’s the perfect way to jumpstart your journey in the XPHERE ecosystem and begin earning rewards efficiently._**
 
 ## Key Features
 
@@ -30,7 +30,7 @@ Stay up-to-date with the latest updates and improvements:
    To run the miner program, you need to set the targetMiner. Follow these steps
    - Visit https://about.zigap.io and create a wallet.
    - Once the wallet is created, copy the generated address and set it as the targetMiner in the configuration.
-   - Select the `XPHERE 2.0 (Testnet) network` in the wallet, then copy the generated wallet address and use it as the targetMiner in your setup.
+   - Select the `XPHERE 2.0 network` in the wallet, then copy the generated wallet address and use it as the targetMiner in your setup.
 
 #### MacOS
 
@@ -53,13 +53,38 @@ Stay up-to-date with the latest updates and improvements:
 
 - **_Note: If you encounter a warning about an unidentified developer, go to System Preferences → Security & Privacy → General, and allow the miner program._**
 
+  • Option 1: Using config.json
+
   ```bash
-  ./miner-darwin-amd64 -config ./config.json -targetMiner [your wallet address]
+  ./miner-darwin-amd64 -config ./config.json
   ```
 
-##### Example
+  - **🛠 Example `config.json` File**
 
-#### ~/Downloads % ./miner-darwin-amd64 -config ./config.json -targetMiner <code>**_0x43e...e8768_**</code>
+    If you prefer to use a configuration file instead of manually entering parameters, create a `config.json` file with the following structure:
+
+    ```json
+    {
+      "targetMiner": "",
+      "domain": []
+    }
+    ```
+
+  • Option 2: Running without config.json (Manually specify all parameters)
+
+  ```bash
+  ./miner-darwin-amd64 -targetMiner [targetAddress] -domain [https://abcd,https://abcd2...]
+  ```
+
+##### Example Command Execution
+
+1. Option 1: Using config.json:
+
+- #### ~/Downloads % ./miner-darwin-amd64 -config ./config.json
+
+2. Option 2: Running without config.json (Manually specify all parameters):
+
+- #### ~/Downloads % ./miner-darwin-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
 
 #### Linux
 
@@ -91,13 +116,38 @@ Stay up-to-date with the latest updates and improvements:
 
 6. Run the miner program
 
-   ```
-   ./miner-linux-amd64 -config ./config.json -targetMiner [your wallet address]
-   ```
+- Option 1: Using config.json
+
+  ```bash
+  ./miner-linux-amd64 -config ./config.json
+  ```
+
+  - **🛠 Example `config.json` File**
+
+    If you prefer to use a configuration file instead of manually entering parameters, create a `config.json` file with the following structure:
+
+    ```json
+    {
+      "targetMiner": "",
+      "domain": []
+    }
+    ```
+
+- Option 2: Running without config.json (Manually specify all parameters)
+
+      ```bash
+      ./miner-linux-amd64 -targetMiner [targetAddress] -domain [https://abcd,https://abcd2...]
+      ```
 
 ##### Example Command Execution
 
-#### root@USER:~# ./miner-linux-amd64 -config ./config.json -targetMiner <code>**_0x43e...e8768_**</code>
+1. Option 1: Using config.json:
+
+- #### root@USER:~# ./miner-linux-amd64 -config ./config.json
+
+2. Option 2: Running without config.json (Manually specify all parameters):
+
+- #### root@USER:~# ./miner-linux-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
 
 #### Windows
 
@@ -109,18 +159,38 @@ Stay up-to-date with the latest updates and improvements:
 cd %USERPROFILE%\Downloads
 ```
 
-```
-miner-windows-amd64 -config ./config.json -targetMiner [your wallet address]
-```
+- Option 1: Using config.json
 
-**_Make sure to use the appropriate command for your operating system and the location of the downloaded files.
-For example, run the following command_**
+  ```bash
+  miner-windows-amd64 -config ./config.json
+  ```
 
-##### Example
+  - **🛠 Example `config.json` File**
 
-#### C:\Users\USER\Downloads>miner-windows-amd64 -config ./config.json -targetminer <code>**_0x43e...e8768_**</code>
+    If you prefer to use a configuration file instead of manually entering parameters, create a `config.json` file with the following structure:
 
----
+    ```json
+    {
+      "targetMiner": "",
+      "domain": []
+    }
+    ```
+
+- Option 2: Running without config.json (Manually specify all parameters)
+
+      ```bash
+      miner-windows-amd64 -targetMiner [targetAddress] -domain [https://abcd,https://abcd2...]
+      ```
+
+##### Example Command Execution
+
+1. Option 1: Using config.json:
+
+- #### C:\Users\USER\Downloads> miner-windows-amd64 -config ./config.json
+
+2. Option 2: Running without config.json (Manually specify all parameters):
+
+- #### C:\Users\USER\Downloads> miner-windows-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
 
 ### Contact & Feedback
 
