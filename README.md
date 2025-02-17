@@ -178,9 +178,9 @@ cd %USERPROFILE%\Downloads
 
 - Option 2: Running without config.json (Manually specify all parameters)
 
-      ```bash
-      miner-windows-amd64 -targetMiner [targetAddress] -domain [https://abcd,https://abcd2...]
-      ```
+  ```bash
+   miner-windows-amd64 -targetMiner [targetAddress] -domain [https://abcd,https://abcd2...]
+  ```
 
 ##### Example Command Execution
 
