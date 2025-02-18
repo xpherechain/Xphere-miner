@@ -78,7 +78,7 @@ Stay up-to-date with the latest updates and improvements:
 
 #### Example Mac Command Execution - Mainnet,TestNet
 
-##### Mainnet
+##### ![Mainnet](https://img.shields.io/badge/Mainnet-red?style=flat-square)
 
 1. Option 1: Using config.json:
 
@@ -88,7 +88,7 @@ Stay up-to-date with the latest updates and improvements:
 
 - #### ~/Downloads % ./miner-darwin-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
 
-##### TestNet
+##### ![TestNet](https://img.shields.io/badge/TestNet-blue?style=flat-square)
 
 - #### ~/Downloads % ./miner-darwin-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://testnet-asia-mining.x-phere.com</code>
 
@@ -147,7 +147,7 @@ Stay up-to-date with the latest updates and improvements:
 
 #### Example Mac Command Execution - Mainnet,TestNet
 
-##### Mainnet
+##### ![Mainnet](https://img.shields.io/badge/Mainnet-red?style=flat-square)
 
 1. Option 1: Using config.json:
 
@@ -157,7 +157,7 @@ Stay up-to-date with the latest updates and improvements:
 
 - #### root@USER:~# ./miner-linux-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
 
-##### TestNet
+##### ![TestNet](https://img.shields.io/badge/TestNet-blue?style=flat-square)
 
 - #### root@USER:~# ./miner-linux-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://testnet-asia-mining.x-phere.com</code>
 
@@ -196,7 +196,7 @@ cd %USERPROFILE%\Downloads
 
 #### Example Mac Command Execution - Mainnet,TestNet
 
-##### Mainnet
+##### ![Mainnet](https://img.shields.io/badge/Mainnet-red?style=flat-square)
 
 1. Option 1: Using config.json:
 
@@ -206,7 +206,7 @@ cd %USERPROFILE%\Downloads
 
 - #### C:\Users\USER\Downloads> miner-windows-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
 
-##### TestNet
+##### ![TestNet](https://img.shields.io/badge/TestNet-blue?style=flat-square)
 
 - #### C:\Users\USER\Downloads> miner-windows-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://testnet-asia-mining.x-phere.com</code>
 
