@@ -32,7 +32,7 @@ Stay up-to-date with the latest updates and improvements:
    - Once the wallet is created, copy the generated address and set it as the targetMiner in the configuration.
    - Select the `XPHERE 2.0 network` in the wallet, then copy the generated wallet address and use it as the targetMiner in your setup.
 
-#### MacOS
+### MacOS
 
 1. Open the Terminal.
 2. Navigate to the directory where you placed the MacOS miner binary, and also place the `config.json` file in the same directory.
@@ -76,7 +76,9 @@ Stay up-to-date with the latest updates and improvements:
   ./miner-darwin-amd64 -targetMiner [targetAddress] -domain [https://abcd,https://abcd2...]
   ```
 
-##### Example Command Execution
+#### Example Mac Command Execution - Mainnet,TestNet
+
+##### Mainnet
 
 1. Option 1: Using config.json:
 
@@ -86,7 +88,11 @@ Stay up-to-date with the latest updates and improvements:
 
 - #### ~/Downloads % ./miner-darwin-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
 
-#### Linux
+##### TestNet
+
+- #### ~/Downloads % ./miner-darwin-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://testnet-asia-mining.x-phere.com</code>
+
+### Linux
 
 1. Open the Terminal.
 2. Navigate to the directory containing the miner binary and config file
@@ -135,11 +141,13 @@ Stay up-to-date with the latest updates and improvements:
 
 - Option 2: Running without config.json (Manually specify all parameters)
 
-      ```bash
-      ./miner-linux-amd64 -targetMiner [targetAddress] -domain [https://abcd,https://abcd2...]
-      ```
+  ```bash
+  ./miner-linux-amd64 -targetMiner [targetAddress] -domain [https://abcd,https://abcd2...]
+  ```
 
-##### Example Command Execution
+#### Example Mac Command Execution - Mainnet,TestNet
+
+##### Mainnet
 
 1. Option 1: Using config.json:
 
@@ -149,7 +157,11 @@ Stay up-to-date with the latest updates and improvements:
 
 - #### root@USER:~# ./miner-linux-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
 
-#### Windows
+##### TestNet
+
+- #### root@USER:~# ./miner-linux-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://testnet-asia-mining.x-phere.com</code>
+
+### Windows
 
 1. **_Open Command Prompt with administrator privileges._**
 2. Navigate to the directory where you placed the Windows miner binary, and also place the config.json file in the same directory.
@@ -182,7 +194,9 @@ cd %USERPROFILE%\Downloads
    miner-windows-amd64 -targetMiner [targetAddress] -domain [https://abcd,https://abcd2...]
   ```
 
-##### Example Command Execution
+#### Example Mac Command Execution - Mainnet,TestNet
+
+##### Mainnet
 
 1. Option 1: Using config.json:
 
@@ -191,6 +205,10 @@ cd %USERPROFILE%\Downloads
 2. Option 2: Running without config.json (Manually specify all parameters):
 
 - #### C:\Users\USER\Downloads> miner-windows-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
+
+##### TestNet
+
+- #### C:\Users\USER\Downloads> miner-windows-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://testnet-asia-mining.x-phere.com</code>
 
 ### Contact & Feedback
 
