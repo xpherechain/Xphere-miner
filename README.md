@@ -145,7 +145,7 @@ Stay up-to-date with the latest updates and improvements:
   ./miner-linux-amd64 -targetMiner [targetAddress] -domain [https://abcd,https://abcd2...]
   ```
 
-#### Example Mac Command Execution - Mainnet,TestNet
+#### Example Linux Command Execution - Mainnet,TestNet
 
 ##### ![Mainnet](https://img.shields.io/badge/Mainnet-red?style=flat-square)
 
@@ -194,7 +194,7 @@ cd %USERPROFILE%\Downloads
    miner-windows-amd64 -targetMiner [targetAddress] -domain [https://abcd,https://abcd2...]
   ```
 
-#### Example Mac Command Execution - Mainnet,TestNet
+#### Example Window Command Execution - Mainnet,TestNet
 
 ##### ![Mainnet](https://img.shields.io/badge/Mainnet-red?style=flat-square)
 
