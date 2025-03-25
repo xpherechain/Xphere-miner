@@ -16,7 +16,7 @@ It enables users to mine blocks efficiently and earn rewards. The program is com
 
 Stay up-to-date with the latest updates and improvements:
 
-- **Latest Release Notes**: [Release v0.0.3](https://github.com/xpherechain/Xphere-miner/releases/tag/v0.0.3)
+- **Latest Release Notes**: [Release v0.0.4](https://github.com/xpherechain/Xphere-miner/releases/tag/v0.0.3)
 
 ---
 
