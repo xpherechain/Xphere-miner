@@ -16,7 +16,7 @@ It enables users to mine blocks efficiently and earn rewards. The program is com
 
 Stay up-to-date with the latest updates and improvements:
 
-- **Latest Release Notes**: [Release v0.0.4](https://github.com/xpherechain/Xphere-miner/releases/tag/v0.0.4)
+- **Latest Release Notes**: [Latest Release](https://github.com/xpherechain/Xphere-miner/releases/latest)
 
 ---
 
@@ -80,17 +80,27 @@ Stay up-to-date with the latest updates and improvements:
 
 ##### ![Mainnet](https://img.shields.io/badge/Mainnet-red?style=flat-square)
 
-1. Option 1: Using config.json:
+1. <b>Using config.json</b>
 
 - #### ~/Downloads % ./miner-darwin-amd64 -config ./config.json
 
-2. Option 2: Running without config.json (Manually specify all parameters):
+2. <b>Running without config.json (Manually specify all parameters)</b>
 
 - #### ~/Downloads % ./miner-darwin-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
 
+3. <b>Stratum Mining-Pool</b>
+
+- #### ~/Downloads % ./miner-darwin-amd64 -stratum stratum+tcp://<code>0xcf52d7D7Ffb....BbF7Af04603B30.</code>workername:password@<code>stratum-sgp.x-phere.com:33333</code>
+
 ##### ![TestNet](https://img.shields.io/badge/TestNet-blue?style=flat-square)
 
+1. <b>Running without config.json (Manually specify all parameters)</b>
+
 - #### ~/Downloads % ./miner-darwin-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://testnet-asia-mining.x-phere.com</code>
+
+2. <b>Stratum Mining-Pool</b>
+
+- #### ~/Downloads % ./miner-darwin-amd64 -stratum stratum+tcp://<code>0xcf52d7D7Ffb....BbF7Af04603B30.</code>workername:password@<code>testnet-stratum.x-phere.com:33333</code>
 
 ### Linux
 
@@ -149,17 +159,27 @@ Stay up-to-date with the latest updates and improvements:
 
 ##### ![Mainnet](https://img.shields.io/badge/Mainnet-red?style=flat-square)
 
-1. Option 1: Using config.json:
+1. <b>Using config.json</b>
 
 - #### root@USER:~# ./miner-linux-amd64 -config ./config.json
 
-2. Option 2: Running without config.json (Manually specify all parameters):
+2. <b> Running without config.json (Manually specify all parameters)</b>
 
 - #### root@USER:~# ./miner-linux-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
 
+3. <b>Stratum Mining-Pool</b>
+
+- #### root@USER:~# ./miner-linux-amd64 -stratum stratum+tcp://<code>0xcf52d7D7Ffb....BbF7Af04603B30.</code>workername:password@<code>stratum-sgp.x-phere.com:33333</code>
+
 ##### ![TestNet](https://img.shields.io/badge/TestNet-blue?style=flat-square)
 
+1. <b>Running without config.json (Manually specify all parameters)</b>
+
 - #### root@USER:~# ./miner-linux-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://testnet-asia-mining.x-phere.com</code>
+
+2. <b>Stratum Mining-Pool</b>
+
+- #### root@USER:~# ./miner-linux-amd64 -stratum stratum+tcp://<code>0xcf52d7D7Ffb....BbF7Af04603B30.</code>workername:password@<code>testnet-stratum.x-phere.com:33333</code>
 
 ### Windows
 
@@ -198,17 +218,27 @@ cd %USERPROFILE%\Downloads
 
 ##### ![Mainnet](https://img.shields.io/badge/Mainnet-red?style=flat-square)
 
-1. Option 1: Using config.json:
+1. <b> Using config.json</b>
 
 - #### C:\Users\USER\Downloads> miner-windows-amd64 -config ./config.json
 
-2. Option 2: Running without config.json (Manually specify all parameters):
+2. <b> Running without config.json (Manually specify all parameters)</b>
 
 - #### C:\Users\USER\Downloads> miner-windows-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://sgp-mining.x-phere.com,https://bkk-mining.x-phere.com,https://hkg-mining.x-phere.com,https://idn-mining.x-phere.com</code>
 
+3. <b>Stratum Mining-Pool</b>
+
+- #### C:\Users\USER\Downloads> miner-windows-amd64 -stratum stratum+tcp://<code>**_0x43e...e8768_**</code>.workername:password@<code>stratum-sgp.x-phere.com:33333</code>
+
 ##### ![TestNet](https://img.shields.io/badge/TestNet-blue?style=flat-square)
 
+1. <b>Running without config.json (Manually specify all parameters)</b>
+
 - #### C:\Users\USER\Downloads> miner-windows-amd64 -targetMiner <code>**_0x43e...e8768_**</code> -domain <code>https://testnet-asia-mining.x-phere.com</code>
+
+2. <b>Stratum Mining-Pool</b>
+
+- #### C:\Users\USER\Downloads> miner-windows-amd64 -stratum stratum+tcp://<code>**_0x43e...e8768_**</code>.workername:password@<code>testnet-stratum.x-phere.com:33333</code>
 
 ### Contact & Feedback
 
