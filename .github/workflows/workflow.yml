@@ -113,14 +113,3 @@ jobs:
           asset_path: ./miner/src/dist/config.json
           asset_name: config.json
           asset_content_type: application/json
-
-      - name: Update README with latest release
-        run: |
-          sed -i "s#Release v[0-9.]*#Release ${{ steps.tag_version.outputs.new_tag }}#g" README.md
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git config --global status.submodulesummary false
-          git config --global diff.ignoreSubmodules all
-          git add README.md
-          git commit -m "Update README with Release ${{ steps.tag_version.outputs.new_tag }}"
-          git push
