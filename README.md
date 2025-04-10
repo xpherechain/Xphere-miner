@@ -11,12 +11,20 @@ It enables users to mine blocks efficiently and earn rewards. The program is com
 - **SHA-256 Based Mining**: Secure and optimized Proof of Work implementation
 - **User-Friendly Configuration**: Provides a configuration file (`config.json`) and command-line options
 - **XPHERE Network Compatibility**: Supports XPHERE TEST NET 2.0
+- **Stratum Pool Support**: Start mining in pools from [version `v0.0.5`](https://github.com/xpherechain/Xphere-miner/releases/tag/v0.0.5)!
 
 ## Release
 
 Stay up-to-date with the latest updates and improvements:
 
 - **Latest Release Notes**: [Latest Release](https://github.com/xpherechain/Xphere-miner/releases/latest)
+
+> **New in v0.0.5!**  
+> We now support **Stratum Mining Pools** – scale your mining operations with pool mining support for both **Mainnet** and **TestNet**.  
+> Simply use the `-stratum` flag to connect to your desired pool and start contributing your hashpower more efficiently!
+>
+> Stratum is now officially supported and allows you to mine via pool with increased scalability and simplicity.
+> Refer to the usage examples under each platform section (macOS, Linux, Windows) below to get started quickly with Stratum mining.
 
 ---
 
